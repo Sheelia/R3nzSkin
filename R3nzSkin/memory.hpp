@@ -38,7 +38,7 @@ public:
 	ManagerTemplate<AIMinionClient>* minionList;
 	ManagerTemplate<AITurret>* turretList;
 	ChampionManager* championManager;
-	
+
 	std::uintptr_t materialRegistry;
 	IDirect3DDevice9* d3dDevice;
 	IDXGISwapChain* swapChain;
@@ -82,12 +82,12 @@ private:
 		},
 		{
 			{
-				"48 8B 35 ? ? ? ? 4C 8D 44 24 ?"
+				"48 89 0D ? ? ? ? 48 8D 05 ? ? ? ? 33 D2 48 89 01 48 8D 05 ? ? ? ?"
 			}, true, false, true, 0, &offsets::global::ManagerTemplate_AITurret_
 		},
 		{
 			{
-				"48 8B 0D ? ? ? ? FF 15 ? ? ? ? 48 8B 05 ? ? ? ? 39 98 ? ? ? ?"
+				"48 8B 0D ? ? ? ? FF 15 ? ? ? ? 48 8B 05 ? ? ? ?"
 			}, true, false, true, 0, &offsets::global::Riot__g_window
 		},
 		{
@@ -97,7 +97,7 @@ private:
 		},
 		{
 			{
-				"40 38 BB ? ? 00 00 0F 85 ? 00 00 00 66 C7 83 ? ? 00 00 00 04 0F 31 48 C1 E2 ? 4C 8D 83 ? ? 00 00 48 0B C2 44 8B CF 48 89 44 24 ? 8B D7 48"
+				"40 38 BB ? ? ? ? 0F 85 ? ? ? ? 66 C7 83 ? ? ? ? ? ? 0F 31 48 C1 E2 20 4C 8D 83 ? ? ? ? 48 0B C2 44 8B CF 48 89 44 24 ? 8B D7"
 			}, false, true, false, 0, &offsets::AIBaseCommon::SkinId
 		},
 		{
@@ -112,7 +112,7 @@ private:
 		},
 		{
 			{
-				"E8 ? ? ? ? 48 8D 8D ? ? 00 00 E8 ? ? ? ? 48 85 C0"
+				"E8 ? ? ? ? 41 8B 97 C8 11 00 00"
 			}, true, false, false, 0, &offsets::functions::CharacterDataStack__Push
 		},
 		{
